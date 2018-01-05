@@ -1,5 +1,5 @@
-Relax with this RESTful Lab
 Objectives
+
 Get more practice creating JSON APIs!
 We have a fully functioning JSON API that serves up a collection of videos and videos by ID, and a collection of comedians!
 
@@ -16,8 +16,11 @@ Challenge 2
 Make a whole new resource. Whatever you want!
 
 Create an array of objects representing that resource
+
 Create the route to return the collection of that resource
+
 Create the route to return one resource from that collection by ID
+
 BONUS
 Check out the Express documentation and look at app.post. Can you create a POST route to POST data?
 We will cover POST in depth tomorrow and next week
