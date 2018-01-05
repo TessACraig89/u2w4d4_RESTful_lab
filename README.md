@@ -10,12 +10,12 @@ hint Google is your friend.
 Next:
 
 Challenge 1
-Make the route that returns comedians by ID functional!
+//Make the route that returns comedians by ID functional!
 
 Challenge 2
-Make a whole new resource. Whatever you want!
+//Make a whole new resource. Whatever you want!
 
-Create an array of objects representing that resource
+//Create an array of objects representing that resource
 
 Create the route to return the collection of that resource
 

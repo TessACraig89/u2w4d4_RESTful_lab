@@ -54,36 +54,29 @@ response.send("Sorry this song id does not exit in this data-base.");
 });
 
 
-app.get('/songs', (request, response) => {
-      let songsJSON = JSON.stringify(songs[i].id)
-      response.send(songsJSON);
+// Create the route to return the collection of that resource
+app.get('/songs/', (request, response) => {
+    response.send(songs);
 });
 
-// route to return the collection of that resource
-app.get("/songs", (request, response) => {
-    response.send();
-});
-
-
-app.get("/songs/:id", (request, response) => {
-    response.send("Song by id.");
-});
-
-app.get("/artist", (request, response) => {
-    response.send("All artists.");
-});
-
-app.get("/artist/:id", (request, response) => {
-    response.send("Artist by id.");
-});
-
-app.get("/artist/:id/songs", (request, response) => {
-    response.send("All songs by artist.");
-});
-
-app.get("/artist/:id/songs/:id", (request, response) => {
-    response.send("Specific song by artist.");
-});
+//WIP
+// app.get('/artist/', (request, response) => {
+//   for (let i = 0; i < songs.length; i++) {
+//     response.send(songs[i].artist);
+//   }
+// });
+//
+// app.get('/artist/:id', (request, response) => {
+//     response.send();
+// });
+//
+// app.get('/artist/:id/songs', (request, response) => {
+//     response.send();
+// });
+//
+// app.get('/artist/:id/songs/:id', (request, response) => {
+//     response.send();
+// });
 
 app.listen(3000, () => {
     console.log("I am listening");
